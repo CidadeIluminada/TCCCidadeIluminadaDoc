@@ -1,0 +1,15 @@
+// apt-get install graphviz
+//$ cat mer.dot | dot -Tsvg > mer.svg
+//$ cat mer.dot | dot -Tjpg > mer.jpg
+digraph {
+    node[shape="box", style="rounded"]
+       start; end;
+    node[shape="rectangle", style=""]
+        nova_chamada; foto_poste; gps; endereco; envio;
+
+    start[label="Login no sistema (Início)"]
+    end[label="Fim"]
+
+    start -> nova_chamada -> foto_poste -> gps -> endereco -> envio -> end;
+
+}
