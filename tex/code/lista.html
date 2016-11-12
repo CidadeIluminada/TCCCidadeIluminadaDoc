@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lista de compras</title>
+</head>
+<body>
+<table class="table table-striped">
+<thead>
+    <tr>
+        <th>
+            Item
+        </th>
+    </tr>
+</thead>
+<tbody>
+    {% for item in lista.items %}
+    <tr>
+        <td>
+            {{ item.nome }}
+        </td>
+    </tr>
+    {% else %}
+    <tr>
+        <td>
+            Nenhum item na lista.
+        </td>
+    </tr>
+    {% endfor %}
+    <tr>
+        <td>
+            <form action="{{ url_for('novo_item') }}"
+                method="POST">
+                <input name="nome_item" type="text">
+                <button type="submit">
+                    Adicionar item
+                </button>
+                <input type="hidden" name="lista_id"
+                value="{{ lista.id }}">
+            </form>
+        </td>
+    </tr>
+</tbody>
+</table>
+</body>
+</html>
