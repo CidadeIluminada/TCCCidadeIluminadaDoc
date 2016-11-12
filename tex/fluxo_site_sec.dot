@@ -5,11 +5,18 @@ digraph {
     node[shape="box", style="rounded"]
        start; end;
     node[shape="rectangle", style=""]
-        nova_chamada; foto_poste; gps; endereco; envio;
+        criar_protocolo; associa_poste; gerar_os; revisar_os;
+    node[shape="trapezium"]
+         urbam_realiza_os;
 
-    start[label="Login no sistema (Início)"]
-    end[label="Fim"]
+    start[label="Início"];
+    end[label="Fim"];
+    criar_protocolo[label="Criar Protocolo"];
+    associa_poste[label="Associa Poste ao Protocolo"];
+    gerar_os[label="Gerar Ordem de Serviço"];
+    urbam_realiza_os[label="URBAM Realiza \nOrdem de Serviço"];
+    revisar_os[label="Revisar e confirmar Ordem de Serviço"];
 
-    start -> nova_chamada -> foto_poste -> gps -> endereco -> envio -> end;
-
+    start -> criar_protocolo -> associa_poste -> gerar_os -> urbam_realiza_os;
+    urbam_realiza_os -> revisar_os -> end;
 }
