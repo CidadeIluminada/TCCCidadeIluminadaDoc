@@ -1,0 +1,19 @@
+// apt-get install graphviz
+//$ cat mer.dot | dot -Tsvg > mer.svg
+//$ cat mer.dot | dot -Tjpg > mer.jpg
+digraph {
+    node[shape="box", style="rounded"]
+       start; end;
+    node[shape="rectangle", style=""]
+        nova_chamada; foto_poste; gps; endereco; envio;
+
+    start -> nova_chamada -> foto_poste -> gps -> endereco -> envio -> end;
+
+    start[label="Tela inicial"]
+    end[label="Fim"]
+    nova_chamada[label="Opção \"Criar nova chamada\""]
+    foto_poste[label="Tirar foto do poste"]
+    gps[label="Selecionar endereço no GPS"]
+    endereco[label="Endereço preenchido automaticamente"]
+    envio[label="Enviar para a prefeitura"]
+}
