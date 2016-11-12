@@ -9,7 +9,7 @@ digraph {
 
     start -> nova_chamada -> foto_poste -> gps -> endereco -> envio -> end;
 
-    start[label="Tela inicial"]
+    start[label="Início"]
     end[label="Fim"]
     nova_chamada[label="Opção \"Criar nova chamada\""]
     foto_poste[label="Tirar foto do poste"]

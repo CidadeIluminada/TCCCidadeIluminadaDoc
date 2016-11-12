@@ -779,7 +779,14 @@ Na geração da ordem de serviço, o sistema deverá dar preferência em agrupar
  \legend{Fonte: Produzido pelos autores}
 \end{figure}
 
-A seguir será descrito o fluxo principal de utilização do sistema de gerenciamento destinado à Secretaria Municipal de Obras de São José dos Campos, seguindo os fluxograma do fluxo principal do sistema para os usuários da Secretaria de Obras (Figura \ref{fluxo-site-sec}) e para os usuários da URBAM (Figura xxx).
+\begin{figure}[!htbp]
+ \centering
+ \caption{\label{fluxo-site-urbam}Fluxo principal do aplicativo web para usuários da URBAM}
+ \frame{\includegraphics[scale=1]{fluxo_site_urbam.png}}
+ \legend{Fonte: Produzido pelos autores}
+\end{figure}
+
+A seguir será descrito o fluxo principal de utilização do sistema de gerenciamento destinado à Secretaria Municipal de Obras de São José dos Campos, seguindo os fluxograma do fluxo principal do sistema para os usuários da Secretaria de Obras (Figura \ref{fluxo-site-sec}) e para os usuários da URBAM (Figura \ref{fluxo-site-urbam}).
 
 Para iniciar, o usuário da secretaria faz o login no sistema e abre o menu Protocolos onde os protocolos estão listados, como mostrado na Figura \ref{site-tela-inicial}.
 
@@ -789,8 +796,6 @@ Para iniciar, o usuário da secretaria faz o login no sistema e abre o menu Prot
  \frame{\includegraphics[scale=0.25]{site/1-lista_protocolos.png}}
  \legend{Fonte: Produzido pelos autores}
 \end{figure}
-
-\clearpage
 
 Para criar um novo protocolo, deve se clicar em Criar, onde será aberto o formulário de novo protocolo, como mostrado na Figura \ref{site-novo-protocolo}.
 Note as informações necessárias para se poder criar um novo protocolo, sendo a informação mais importante qual poste que o protocolo se refere (Figura \ref{site-seleciona-poste-protocolo}).
@@ -810,8 +815,6 @@ Para editar um protocolo, na tela da lista de protocolos (Figura \ref{site-tela-
  \frame{\includegraphics[scale=0.25]{site/3-seleciona_poste.png}}
  \legend{Fonte: Produzido pelos autores}
 \end{figure}
-
-\clearpage
 
 Ao associar o protocolo a um poste, essa associação pode ser confirmada através da lista de postes (Figura \ref{site-lista-poste}).
 
@@ -838,8 +841,6 @@ A partir dessa visão, para cada item de manuteção do poste, pode estar associ
  \frame{\includegraphics[scale=0.25]{site/6-protocolos_poste.png}}
  \legend{Fonte: Produzido pelos autores}
 \end{figure}
-
-\clearpage
 
 Para o usuário da Secretaria de Obras, no menu Principal é possível visualizar as Ordens de Serviço em aberto e também gerar novas Ordens de Serviço, como pode ser visto na Figura \ref{site-tela-secretaria}.
 
@@ -876,8 +877,6 @@ Assim uma nova Ordem de Serviço é gerada como mostrado na Figura \ref{site-os-
  \legend{Fonte: Produzido pelos autores}
 \end{figure}
 
-\clearpage
-
 Tanto o usuário da Secretaria de Obras quanto o usuário da URBAM tem acesso ao PDF que será gerado, como mostrado na Figura \ref{site-pdf}.
 A finalidade do PDF é servir como apoio em campo para os operários da URBAM para melhor relatarem os serviços feitos e equipamentos utilizados.
 Esse PDF mostra uma grade com o endereço completo dos postes da Ordem de Serviço, bem como os equipamentos previamente cadastrados que podem ser utilizados.
@@ -889,8 +888,6 @@ Além disso, esta grade possui um campo para o preenchimento do motivo de não r
  \frame{\includegraphics[scale=0.25]{site/12-pdf.png}}
  \legend{Fonte: Produzido pelos autores}
 \end{figure}
-
-\clearpage
 
 Assim que uma equipe de manutenção for despachada, o usuário da URBAM (Figura \ref{site-visao-urbam}) deverá sinalizar este envio clicando no botão Enviar para serviço.
 Após isso, a Ordem de Serviço irá mudar de status para Em serviço, e estará disponível para que seja realizado o seu eventual fechamento (Figura \ref{site-servico-os}).
@@ -908,8 +905,6 @@ Após isso, a Ordem de Serviço irá mudar de status para Em serviço, e estará
  \frame{\includegraphics[scale=0.25]{site/14-servico_os.png}}
  \legend{Fonte: Produzido pelos autores}
 \end{figure}
-
-\clearpage
 
 Para fechar uma Ordem de Serviço em aberto, o usuário da URBAM deverá clicar em Iniciar Fechamento, e então o usuário será redirecionado para a tela de fechamento (Figura \ref{site-fechamento-urbam}).
 Neste momento, etapa o usuário irá informar ao sistema se o serviço foi realizado, e o material utilizado, como a Figura \ref{site-material-e-motivo} mostra.
@@ -935,8 +930,6 @@ Após o fechamento de todos os serviços, o status da Ordem de Serviço ficará 
  \frame{\includegraphics[scale=0.25]{site/17-os_feita.png}}
  \legend{Fonte: Produzido pelos autores}
 \end{figure}
-
-\clearpage
 
 Com a Ordem de Serviço Feita, o usuário da Secretaria deve confirmar o material utilizado em cada serviço realizado, além de conferir o motivo de alguns dos serviços não terem sido executados.
 

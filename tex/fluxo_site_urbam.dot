@@ -5,11 +5,17 @@ digraph {
     node[shape="box", style="rounded"]
        start; end;
     node[shape="rectangle", style=""]
-        nova_chamada; foto_poste; gps; endereco; envio;
+        verificar_os; imprimir_pdf; realizar_fechamento;
+    node[shape="trapezium"]
+         realizar_servico;
 
-    start[label="Login no sistema (Início)"]
-    end[label="Fim"]
+    start[label="Início"];
+    verificar_os[label="Verifica Ordem de Serviço em aberto"];
+    imprimir_pdf[label="Imprime Ordem de Serviço"];
+    realizar_servico[label="Equipe de campo \n realiza manutenção"];
+    realizar_fechamento[label="Realiza fechamento da Ordem de Serviço"];
+    end[label="Fim"];
 
-    start -> nova_chamada -> foto_poste -> gps -> endereco -> envio -> end;
+    start -> verificar_os -> imprimir_pdf -> realizar_servico -> realizar_fechamento -> end;
 
 }
